@@ -455,6 +455,15 @@ code {
   white-space: pre;
 }
 
+@keyframes codeFadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.esk-code-body {
+  animation: codeFadeIn 0.4s ease-out forwards;
+}
+
 /* ============================================================
    QUICKSTART CAROUSEL
    ============================================================ */
@@ -484,7 +493,7 @@ code {
   border-radius: var(--radius-md);
   cursor: pointer;
   text-align: left;
-  transition: all 0.2s;
+  transition: all 0.3s ease;
   font-family: var(--font);
 }
 
@@ -510,7 +519,7 @@ code {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  transition: all 0.2s;
+  transition: all 0.3s ease;
 }
 
 .esk-carousel-tab.active .esk-carousel-tab-num {
@@ -560,7 +569,7 @@ code {
   background: var(--gray-200);
   cursor: pointer;
   padding: 0;
-  transition: all 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .esk-carousel-dot.active {
@@ -752,67 +761,7 @@ code {
   color: var(--gray-500);
 }
 
-/* ============================================================
-   RELATED
-   ============================================================ */
-.esk-related-section {
-  background: var(--gray-50);
-}
 
-.esk-related-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.esk-related-card {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  background: var(--white);
-  border: 1px solid var(--gray-200);
-  border-radius: var(--radius-lg);
-  padding: 28px;
-  transition: all 0.3s;
-  text-decoration: none;
-}
-
-.esk-related-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-
-.esk-related-icon {
-  width: 44px;
-  height: 44px;
-  background: rgba(20, 42, 84, 0.08);
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.esk-related-icon svg {
-  width: 22px;
-  height: 22px;
-  stroke: var(--primary-blue);
-}
-
-.esk-related-card h3 {
-  font-size: 17px;
-  font-weight: 600;
-  color: var(--gray-900);
-  margin: 0;
-}
-
-.esk-related-card p {
-  font-size: 14px;
-  color: var(--gray-500);
-  margin: 0;
-  line-height: 1.6;
-}
 
 /* ============================================================
    CTA
@@ -860,9 +809,7 @@ code {
     padding: 8px 14px;
   }
 
-  .esk-related-grid {
-    grid-template-columns: 1fr;
-  }
+
 
   .esk-carousel-nav {
     grid-template-columns: repeat(2, 1fr);
