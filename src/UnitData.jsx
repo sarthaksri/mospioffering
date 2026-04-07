@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./merged.css";
+import "./App.css";
 import nsoLogo from "./assets/brand_nso.svg";
 
 const Header = () => (

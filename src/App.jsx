@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./merged.css";
+import "./App.css";
 
 /* ===== Header ===== */
 const Header = () => (
