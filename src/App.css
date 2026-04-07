@@ -46,8 +46,12 @@
   height: auto;
 }
 
-:where(.esk-page) code {
+.esk-page code {
   font-family: var(--esk-mono);
+  color: inherit;
+  border: none;
+  background: none;
+  padding: 0;
 }
 
 /* ===== Layout ===== */
