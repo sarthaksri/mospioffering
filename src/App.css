@@ -430,12 +430,12 @@
 }
 
 .esk-page .esk-code-body code {
-  font-size: inherit !important;
-  color: inherit !important;
-  background: none !important;
-  border: none !important;
-  padding: 0 !important;
-  white-space: pre;
+  all: unset !important;
+  font-family: var(--esk-mono) !important;
+  font-size: 13.5px !important;
+  color: #e2e8f0 !important;
+  white-space: pre !important;
+  line-height: 1.7 !important;
 }
 
 @keyframes eskCodeFadeIn {
