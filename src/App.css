@@ -96,7 +96,7 @@
   line-height: 1.7;
 }
 
-.esk-section-desc code {
+.esk-page .esk-section-desc code {
   background: var(--esk-gray-100);
   padding: 2px 7px;
   border-radius: 4px;
@@ -310,7 +310,7 @@
   user-select: none;
 }
 
-.esk-install-box code {
+.esk-page .esk-install-box code {
   font-size: 15px;
   color: #6ee7b7;
   font-weight: 500;
@@ -426,7 +426,7 @@
   background: #22c55e;
 }
 
-.esk-code-filename {
+.esk-page .esk-code-filename {
   font-family: var(--esk-mono);
   font-size: 12px;
   color: #94a3b8;
@@ -454,7 +454,7 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-.esk-code-body {
+.esk-page .esk-code-body {
   animation: eskCodeFadeIn 0.4s ease-out forwards;
 }
 
@@ -528,7 +528,7 @@
   min-width: 0;
 }
 
-.esk-carousel-tab-text code {
+.esk-page .esk-carousel-tab-text code {
   font-size: 12px;
   color: var(--esk-primary-blue);
   font-weight: 600;
