@@ -420,18 +420,21 @@
 .esk-page .esk-code-body {
   padding: 20px 24px;
   overflow-x: auto;
-  font-family: var(--esk-mono);
-  font-size: 13.5px;
+  font-family: var(--esk-mono) !important;
+  font-size: 13.5px !important;
   line-height: 1.7;
-  color: #e2e8f0;
+  color: #e2e8f0 !important;
   margin: 0;
   tab-size: 4;
   animation: eskCodeFadeIn 0.4s ease-out forwards;
 }
 
 .esk-page .esk-code-body code {
-  font-size: inherit;
-  color: inherit;
+  font-size: inherit !important;
+  color: inherit !important;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
   white-space: pre;
 }
 
