@@ -36,17 +36,17 @@
   padding: 0;
 }
 
-.esk-page a {
+:where(.esk-page) a {
   color: var(--esk-primary-blue);
   text-decoration: none;
 }
 
-.esk-page img {
+:where(.esk-page) img {
   max-width: 100%;
   height: auto;
 }
 
-.esk-page code {
+:where(.esk-page) code {
   font-family: var(--esk-mono);
 }
 
